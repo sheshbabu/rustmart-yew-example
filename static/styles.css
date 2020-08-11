@@ -1,0 +1,139 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #333;
+  background: #f7f7f7;
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
+}
+
+.navbar {
+  height: 44px;
+  background: #dd2c00;
+  color: white;
+  box-shadow: 0px 5px 12px 0px rgba(46, 51, 51, 0.18);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.navbar_cart_value {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  background: #b91400;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.product_card_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.product_card_container {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px 0px rgba(46, 51, 51, 0.18);
+  background: white;
+}
+
+.product_card_container:hover {
+  border-color: #ddd;
+  transition: background, border-color 300ms;
+}
+
+.product_card_anchor {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_card_image {
+  width: 80%;
+  object-fit: contain;
+}
+
+.product_card_name,
+.product_card_price,
+.product_atc_button {
+  margin-top: 10px;
+}
+
+.product_card_name {
+  font-weight: bold;
+}
+
+.product_atc_button {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background: #dd2c00;
+  color: white;
+  transition: background 300ms;
+  font-weight: bold;
+}
+
+.product_atc_button:hover {
+  background: #ddd;
+  background: #c41c00;
+}
+
+.product_detail_container {
+  padding: 10px;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_detail_image {
+  height: 30vh;
+}
+
+.loading_spinner_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_spinner {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-top-color: #fff;
+  animation: loading_spinner_animation 1s infinite linear;
+}
+
+@keyframes loading_spinner_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading_spinner_text {
+  margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RustMart</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <script type="module">
+      import init from "/wasm.js";
+      init();
+    </script>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="loading_spinner_container">
+      <div class="loading_spinner"></div>
+      <div class="loading_spinner_text">Loading ...</div>
+    </div>
+  </body>
+</html>

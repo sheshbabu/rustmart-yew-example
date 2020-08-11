@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "name": "Apple",
+  "description": "An apple a day keeps the doctor away",
+  "image": "/products/apple.png",
+  "price": 3.65
+}

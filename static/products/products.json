@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "description": "An apple a day keeps the doctor away",
+    "image": "/products/apple.png",
+    "price": 3.65
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "description": "An old banana leaf was once young and green",
+    "image": "/products/banana.png",
+    "price": 7.99
+  },
+  {
+    "id": 3,
+    "name": "Cherries",
+    "description": "",
+    "image": "/products/cherries.png",
+    "price": 2.93
+  },
+  {
+    "id": 4,
+    "name": "Lemon",
+    "description": "When life gives you lemons, make lemonade",
+    "image": "/products/lemon.png",
+    "price": 1.2
+  },
+  {
+    "id": 5,
+    "name": "Mango",
+    "description": "",
+    "image": "/products/mango.png",
+    "price": 10.0
+  },
+  {
+    "id": 6,
+    "name": "Tangerine",
+    "description": "",
+    "image": "/products/tangerine.png",
+    "price": 4.79
+  },
+  {
+    "id": 7,
+    "name": "Watermelon",
+    "description": "",
+    "image": "/products/watermelon.png",
+    "price": 2.4
+  },
+  {
+    "id": 8,
+    "name": "Strawberry",
+    "description": "",
+    "image": "/products/strawberry.png",
+    "price": 5.0
+  },
+  {
+    "id": 9,
+    "name": "Avocado",
+    "description": "",
+    "image": "/products/avocado.png",
+    "price": 6.4
+  },
+  {
+    "id": 10,
+    "name": "Pineapple",
+    "description": "",
+    "image": "/products/pineapple.png",
+    "price": 15.0
+  }
+]
