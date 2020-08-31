@@ -100,18 +100,9 @@ impl Component for Home {
             .collect();
 
         if !self.state.get_products_loaded {
-            html! {
-                <div class="loading_spinner_container">
-                    <div class="loading_spinner"></div>
-                    <div class="loading_spinner_text">{"Loading ..."}</div>
-                </div>
-            }
+            super::spinner()
         } else if let Some(_) = self.state.get_products_error {
-            html! {
-              <div>
-                <span>{"Error loading products! :("}</span>
-              </div>
-            }
+            super::error("Error loading products! :(")
         } else {
             html! {
                 <div class="product_card_list">{products}</div>

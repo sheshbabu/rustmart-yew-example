@@ -95,18 +95,9 @@ impl Component for ProductDetail {
                 </div>
             }
         } else if !self.state.get_product_loaded {
-            html! {
-                <div class="loading_spinner_container">
-                    <div class="loading_spinner"></div>
-                    <div class="loading_spinner_text">{"Loading ..."}</div>
-                </div>
-            }
+            super::spinner()
         } else {
-            html! {
-                <div>
-                    <span>{"Error loading product! :("}</span>
-                </div>
-            }
+            super::error("Error loading product! :(")
         }
     }
 }
